@@ -7,20 +7,23 @@ import FoodClass as FC
 
 def customer_info_inputs():
     print("---------- CUSTOMER INFO -----------")
-    customerid = int(input("What is the customer ID?: "))
-    name = input("What is the customer name?: ")
-    address = input("What is the customer address?: ")
-    email = input("What is the customer email?: ")
-    phone = input("What is the customer phone number?: ")
-    temp = input("What is the customer Member Status?: ")
-    check = True
-    while check:
-        if temp == "True" or temp == "true":
-            member_status = True
-            check = False
-        elif temp == "False" or temp == "false":
-            member_status = False
-            check = False
+
+    # Customer 1
+    customerid = 570
+    name = "Danni Sellyar"
+    address = "97 Mitchell Way Hewitt Texas 76712"
+    email = "dsellyarft@gmpg.org"
+    phone = "254-555-9362"
+    member_status = False
+
+    # Customer 2
+    # customerid = 569
+    # name = "Aubree Himsworth"
+    # address = "1172 Moulton Hill Waco Texas 76710"
+    # email = "ahimsworthfs@list-manage.com"
+    # phone = "254-555-2273"
+    # member_status = True
+
     return FC.Customer(customerid, name, address, email, phone, member_status)
 
 
